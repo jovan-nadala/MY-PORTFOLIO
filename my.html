@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="my.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">My Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <div class="hero-content">
+            <img src="ID.jpg" alt="My Image" class="profile-img">
+            <h1>I'm Jovan P. Nadala</h1>
+            <p><b>Your Dancer-Engineering Student</b></p> <br><br>
+            <div class="social-icons">
+                 <a href="https://www.instagram.com/jvn.pnnn/" target="_blank">
+                    <img src="ig.jpg" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/jvn.pnnn" target="_blank">
+                    <img src="fb.png" alt="Facebook">
+                </a>
+                <a href="mailto:jovannadala@gmail.com" target="_blank">
+                    <img src="email.png" alt="Email">
+                </a>
+                <a href="https://x.com/bodkawyy" target="_blank">
+                    <img src="X.png" alt="Twitter">
+                </a>
+                <a href="https://www.youtube.com/@bodkawyy" target="_blank">
+                    <img src="yt.png" alt="Youtube">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <br>
+        <h2>ABOUT ME</h2> <br>
+        <img src="ID.jpg" alt="My Image" class="img"> <br><br>
+        <p>Hi, I'm Jovan Nadala, and I'm currently a third-year Computer Engineering student with a passion for technology and innovation.</p> 
+        <p>Over the course of my studies, I’ve developed a strong foundation in both hardware and software, and I’m excited to continue building </p>
+        <p>my skills in this dynamic field. I am deeply committed to continuous learning and am always eager to explore new technologies and concepts.</p>
+        <p>My goal is to contribute to impactful projects, collaborate with driven individuals, and grow within the field of computer engineering.</p><br><br>
+        <p>In addition to my studies, I have experience as the former Public Relations Officer (P.R.O.) of our organization, ACES (Association of Computer Engineering Students). </p>
+        <p>In this role, I improved my communication, leadership, and organizational skills while working to strengthen connections within our community and with external partners.</p> <br>
+    </section>
+
+    <section id="education">
+        <br>
+        <h2>EDUCATION</h2><br>
+        <img src="eleme.jpg" alt="My Image" class="img"> <br><br>
+        <p><b>Inoraguiao Elementary School  [2010-2016]</b>.</p><br><br>
+        <img src="highschool.jpg" alt="My Image" class="img"> <br><br>
+        <p><b>Noveleta National High School [2016-2020]</b>.</p><br><br>
+        <img src="shs.jpg" alt="My Image" class="img"> <br><br>
+        <p><b>Holy Cross Catholic School of Noveleta [2020-2022]</b>.</p><br><br>
+        <img src="cvsu.png" alt="My Image" class="img"> <br><br>
+        <p><b>Cavite State University-CCAT Campus [2022-Present]</b>.</p><br><br>
+    </section>
+
+    <section id="skills">
+        <h2>SKILLS</h2>
+        <ul>
+            <li>Problem Solving</li> <p>"As a computer engineering student, I've developed good problem-solving skills by working through different challenges. I like to take big problems and break them into smaller, easier parts to solve. Whether it's coding, fixing bugs, or working with hardware, I can quickly find and fix issues. I'm always trying to get better, and I enjoy working with others and learning new things." </p>
+            <li>Adaptability</li><p>"As a computer engineering student, I’ve developed strong adaptability skills that help me handle new challenges, whether it’s learning new technologies, picking up a programming language, or adjusting to project changes. I’m quick to adjust my approach and always find solutions. My flexibility allows me to work well independently or in a team, and I’m always eager to learn and grow."</p>
+            <li>Teamwork/Collaboration</li><p>"As a computer engineering student, I’ve worked on a lot of group projects, and I’ve learned how important teamwork is. I enjoy sharing ideas, listening to others, and doing my part to help the team succeed. I believe good communication is key, and I make sure everyone’s voice is heard. Whether it’s solving a tough problem or splitting up tasks, I always focus on working together to get things done. I love learning from others and sharing what I know to help the team."</p>
+            <li>Communication Skills</li><p>"As a computer engineering student, I’ve worked on improving my communication skills to make sure I can explain technical ideas in a simple and clear way. Whether I'm talking with teammates, presenting a project, or writing reports, I focus on making sure my message comes across easily. I also make sure to listen carefully and ask questions so everyone is on the same page. I believe good communication is key to solving problems and working well with others, and I always try to keep things open and positive in group settings."</p>
+        </ul>
+    </section>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <footer>
+        <p>© 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
